@@ -164,7 +164,7 @@
       const horas50 = parseFloat(document.getElementById('horas50').value) || 0;
       const horas100 = parseFloat(document.getElementById('horas100').value) || 0;
 
-      const valorHora = salarioBase / 220; // atualizado para 220h mensais conforme CLT
+      const valorHora = salarioBase / 220; 
       const valor50 = horas50 * valorHora * 1.5;
       const valor100 = horas100 * valorHora * 2;
       const total = valor50 + valor100;
@@ -234,10 +234,10 @@
 
       doc.setDrawColor(255, 105, 180);
       doc.setLineWidth(1);
-      doc.line(20, 85, 190, 85); // linha rosa abaixo do conteúdo
+      doc.line(20, 85, 190, 85); 
 
       doc.setFontSize(10);
-      doc.setTextColor(100, 100, 100); // cinza para o rodapé
+      doc.setTextColor(100, 100, 100); 
       doc.text("Feito com carinho por Natasha 💖", 20, 290);
 
       doc.save(`Horas_Extras_${mesAno}.pdf`);
